@@ -15,11 +15,31 @@
 	<description>Automation testing using spring boot</description>
 	<properties>
 		<java.version>18</java.version>
+		<selenium.version>4.3.0</selenium.version>
+		<testng.version>7.6.0</testng.version>
+		<webdrivermanager.version>5.2.0</webdrivermanager.version>
+		<okhttp.version>4.9.0</okhttp.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>${webdrivermanager.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>${testng.version}</version>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.github.javafaker</groupId>
@@ -42,6 +62,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+			<version>${okhttp.version}</version>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -57,6 +82,11 @@
 						</exclude>
 					</excludes>
 				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.22.1</version>
 			</plugin>
 		</plugins>
 	</build>

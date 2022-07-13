@@ -1,4 +1,4 @@
-package com.selenium.spring;
+package com.selenium.spring.practise;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
@@ -6,11 +6,11 @@ import org.springframework.stereotype.Component;
 
 @Component
 @Getter
-public class Address {
-    @Value("${street}")
-    private String street;
+public class Salary1 {
+    @Value("${amount}")
+    private int amount;
 
-    public Address(){
+    public Salary1(){
 
     }
 }
