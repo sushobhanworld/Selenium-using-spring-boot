@@ -1,4 +1,4 @@
-package com.selenium.spring.annotation;
+package com.selenium.spring.sushobhan.annotation;
 
 import org.springframework.context.annotation.Lazy;
 import org.springframework.context.annotation.Scope;

@@ -1,6 +1,6 @@
 package com.selenium.spring.page.google;
 
-import com.selenium.spring.annotation.Page;
+import com.selenium.spring.sushobhan.annotation.Page;
 import com.selenium.spring.page.BaseClass;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,5 +25,9 @@ public class GooglePage extends BaseClass {
     @Override
     public boolean isAt() {
         return this.searchComponent.isAt();
+    }
+
+    public void closeBrowser() {
+        this.driver.quit();
     }
 }

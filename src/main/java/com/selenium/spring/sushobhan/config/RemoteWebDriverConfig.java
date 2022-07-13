@@ -1,6 +1,6 @@
-package com.selenium.spring.config;
+package com.selenium.spring.sushobhan.config;
 
-import com.selenium.spring.annotation.LazyConfiguration;
+import com.selenium.spring.sushobhan.annotation.LazyConfiguration;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;

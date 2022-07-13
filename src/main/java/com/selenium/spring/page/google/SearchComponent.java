@@ -1,6 +1,6 @@
 package com.selenium.spring.page.google;
 
-import com.selenium.spring.annotation.PageFragment;
+import com.selenium.spring.sushobhan.annotation.PageFragment;
 import com.selenium.spring.page.BaseClass;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

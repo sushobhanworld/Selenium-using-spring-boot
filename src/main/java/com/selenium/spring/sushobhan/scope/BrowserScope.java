@@ -1,4 +1,4 @@
-package com.selenium.spring.config;
+package com.selenium.spring.sushobhan.scope;
 
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.remote.SessionId;
@@ -12,7 +12,7 @@ public class BrowserScope extends SimpleThreadScope {
     @Override
     public Object get(String name, ObjectFactory<?> objectFactory) {
         Object obj = super.get(name, objectFactory);
-        // if the webdriver is quite, it won't know
+        // if the webdriver is quit, it won't know
         // Now, we need to check the webdriver through sessionId
         SessionId sessionId = ((RemoteWebDriver) obj).getSessionId();
         if (Objects.isNull(sessionId)) {

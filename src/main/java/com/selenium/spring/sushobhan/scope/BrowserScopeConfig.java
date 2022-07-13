@@ -1,4 +1,4 @@
-package com.selenium.spring.config;
+package com.selenium.spring.sushobhan.scope;
 
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.context.annotation.Bean;

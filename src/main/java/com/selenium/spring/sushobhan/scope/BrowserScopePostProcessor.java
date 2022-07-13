@@ -1,4 +1,4 @@
-package com.selenium.spring.config;
+package com.selenium.spring.sushobhan.scope;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;

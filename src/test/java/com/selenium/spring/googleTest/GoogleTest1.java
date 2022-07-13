@@ -3,9 +3,8 @@ package com.selenium.spring.googleTest;
 import com.google.common.util.concurrent.Uninterruptibles;
 import com.selenium.spring.SpringBaseTestNGTest;
 import com.selenium.spring.page.google.GooglePage;
-import com.selenium.spring.util.ScreenshotUtil;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Lazy;
+import com.selenium.spring.sushobhan.annotation.LazyAutowired;
+import com.selenium.spring.sushobhan.service.ScreenshotService;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -13,13 +12,11 @@ import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
 public class GoogleTest1 extends SpringBaseTestNGTest {
-    @Autowired
-    @Lazy
+    @LazyAutowired
     private GooglePage googlePage;
 
-    @Autowired
-    @Lazy
-    private ScreenshotUtil screenshotUtil;
+    @LazyAutowired
+    private ScreenshotService screenshotService;
 
     @Test
     public void googleTest() throws IOException {
@@ -29,6 +26,7 @@ public class GoogleTest1 extends SpringBaseTestNGTest {
         this.googlePage.getSearchComponent().search("environment ");
         Assert.assertTrue(this.googlePage.getSearchResult().isAt());
         Assert.assertTrue(this.googlePage.getSearchResult().getCount()>2);
-        this.screenshotUtil.takeScreenShot("Google");
+        this.screenshotService.takeScreenShot();
+        this.googlePage.closeBrowser();
     }
 }

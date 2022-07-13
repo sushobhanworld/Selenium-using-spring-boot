@@ -1,7 +1,7 @@
-package com.selenium.spring.config;
+package com.selenium.spring.sushobhan.config;
 
 import com.github.javafaker.Faker;
-import com.selenium.spring.annotation.LazyConfiguration;
+import com.selenium.spring.sushobhan.annotation.LazyConfiguration;
 import org.springframework.context.annotation.Bean;
 
 @LazyConfiguration

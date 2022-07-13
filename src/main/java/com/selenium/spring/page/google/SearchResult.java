@@ -1,6 +1,6 @@
 package com.selenium.spring.page.google;
 
-import com.selenium.spring.annotation.Page;
+import com.selenium.spring.sushobhan.annotation.Page;
 import com.selenium.spring.page.BaseClass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
