@@ -2,6 +2,7 @@ package com.selenium.spring.page.flights;
 
 import com.selenium.spring.page.BaseClass;
 import com.selenium.spring.sushobhan.annotation.Page;
+import com.selenium.spring.sushobhan.annotation.TakeScreenshot;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -19,6 +20,7 @@ public class FlightPage extends BaseClass {
         this.driver.manage().window().maximize();
     }
 
+    @TakeScreenshot
     public List<String> getLabels() {
         return links.stream()
                 .map(WebElement::getText)
