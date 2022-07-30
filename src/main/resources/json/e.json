@@ -1,0 +1,17 @@
+{
+  "status": 1,
+  "message": "All Accounts inserted successfully",
+  "success": true,
+  "responses": [
+    {
+      "accountId": "0e80690006ba47948013a9653f26f19e",
+      "status": 1,
+      "message": "Account Test_vjqtLerRKY - inserted successfully"
+    },
+    {
+      "contractAccountNumber": "nfkCvILB",
+      "status": 1,
+      "message": "Contract ACCNTR0006564 - inserted successfully"
+    }
+  ]
+}
